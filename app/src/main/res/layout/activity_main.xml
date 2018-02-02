@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+    <Button
+        android:id="@+id/btn_preMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="◀"
+        android:textSize="30dp"
+        android:layout_weight="1"
+        android:background="#00ff0000"/>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="10dp"
+        android:textSize="30sp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btn_nextMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="▶"
+        android:textSize="30dp"
+        android:layout_weight="1"
+        android:background="#00ff0000"/>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:listSelector="#CCCCCC"
+        android:numColumns="7">
+    </GridView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="● SCHEDULE"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btn_addSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:text="+"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ListView
+        android:id="@+id/databaseschedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="no Schedule"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
